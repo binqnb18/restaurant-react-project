@@ -71,31 +71,32 @@ const Catagory = () => {
             </div>
 
             <div className="flex justify-center">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                    {filteredCategories.map((category, index) => (
-                        <div 
-                            key={index} 
-                            className="bg-white shadow-lg rounded-lg overflow-hidden"
-                            style={{ width: '306px', height: '428px' }} 
-                        >
-                            <img
-                                className="w-full h-48 object-cover"
-                                src={category.strCategoryThumb}
-                                alt={category.strCategory}
-                            />
-                            <div className="p-4 text-center">
-                                <h3 className="text-xl font-bold text-red-700 mb-2">
-                                    ${ (Math.random() * (20 - 5) + 5).toFixed(2) }
-                                </h3>
-                                <h2 className="text-lg font-semibold">{category.strCategory}</h2>
-                                <p className="text-gray-600">
-                                    Delicious {category.strCategory} recipes.
-                                </p>
-                            </div>
-                        </div>
-                    ))}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        {filteredCategories.map((category, index) => (
+            <div 
+                key={index} 
+                className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-110"
+                style={{ width: '306px', height: '428px' }} 
+            >
+                <img
+                    className="w-full h-48 object-cover"
+                    src={category.strCategoryThumb}
+                    alt={category.strCategory}
+                />
+                <div className="p-4 text-center">
+                    <h3 className="text-xl font-bold text-red-700 mb-2">
+                        ${ (Math.random() * (20 - 5) + 5).toFixed(2) }
+                    </h3>
+                    <h2 className="text-lg font-semibold">{category.strCategory}</h2>
+                    <p className="text-gray-600">
+                        Delicious {category.strCategory} recipes.
+                    </p>
                 </div>
             </div>
+        ))}
+    </div>
+</div>
+
         </div>
     );
 };

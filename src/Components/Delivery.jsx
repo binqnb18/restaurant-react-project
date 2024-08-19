@@ -6,19 +6,38 @@ const Delivery = () => {
   return (
     <div class="bg-white py-16 px-8 lg:px-24 flex flex-col lg:flex-row items-center">
 
-  <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <div class="h-64 sm:h-auto">
-      <img src={chef} alt="Chef preparing food" class="w-full h-full object-cover rounded-lg" />
+<div className="flex justify-center items-center" style={{ height: '100vh' }}>
+    <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div style={{ borderRadius: '12px', position: 'relative' }}>
+            <img 
+                src={chef} 
+                alt="Chef preparing food" 
+                className="w-full h-full object-cover rounded-lg" 
+                style={{ width: '100%', height: '100%', borderRadius: '12px', objectFit: 'cover' }}
+            />
+        </div>
+        <div className="grid grid-rows-2 gap-4" style={{ display: 'grid', gridTemplateRows: '1fr 1fr', gap: '16px' }}>
+            <div style={{ height: '333px', borderRadius: '12px', overflow: 'hidden' }}>
+                <img 
+                    src={curry} 
+                    alt="Dish 1" 
+                    className="w-full h-full object-cover rounded-lg" 
+                    style={{ width: '100%', height: '100%', borderRadius: '12px', objectFit: 'cover' }}
+                />
+            </div>
+            <div style={{ height: '240px', borderRadius: '12px', overflow: 'hidden' }}>
+                <img 
+                    src={grill} 
+                    alt="Dish 2" 
+                    className="w-full h-full object-cover rounded-lg" 
+                    style={{ width: '100%', height: '100%', borderRadius: '12px', objectFit: 'cover' }}
+                />
+            </div>
+        </div>
     </div>
-    <div class="grid grid-rows-2 gap-4">
-      <div class="h-48">
-        <img src={curry} alt="Dish 1" class="w-full h-full object-cover rounded-lg"/>
-      </div>
-      <div class="h-48">
-        <img src={grill} alt="Dish 2" class="w-full h-full object-cover rounded-lg" />
-      </div>
-    </div>
-  </div>
+</div>
+
+
   
 
   <div class="lg:w-1/2 lg:pl-16 mt-8 lg:mt-0">
