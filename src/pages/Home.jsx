@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 export const Home = () => {
   return (
     <Layout>
-      <Banner />
+    <Banner />
     <Card />
     <Introduce />
     <Event />

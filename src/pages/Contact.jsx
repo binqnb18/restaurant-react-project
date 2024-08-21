@@ -1,7 +1,9 @@
 import React from 'react';
+import Layout from '../Layouts/Layout';
 
 const Contact = () => {
   return (
+    <Layout>
     <div className="flex flex-col items-center">
       <div className="bg-white shadow-md rounded-md p-8" style={{ width: '797px', height: '836px', marginTop: '203px' }}>
         <h2 className="text-4xl font-bold text-center mb-4">Contact Us</h2>
@@ -77,6 +79,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </Layout>
   );
 }
 
