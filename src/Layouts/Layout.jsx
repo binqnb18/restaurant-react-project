@@ -1,13 +1,14 @@
 import React from 'react';
-import Navbar from '../Components/Navbar';
-import Footer from '../Components/Footer';
+import { Outlet } from 'react-router-dom'; // Import Outlet
+import Navbar from '../Components/Navbar'; // Giả sử bạn có Navbar
+import Footer from '../Components/Footer'; // Giả sử bạn có Footer
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="app-layout">
       <Navbar />
-      <main className="flex-grow">
-        {children}
+      <main>
+        <Outlet /> {/* Nơi để hiển thị các route con */}
       </main>
       <Footer />
     </div>

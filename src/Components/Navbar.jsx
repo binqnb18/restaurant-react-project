@@ -77,7 +77,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="space-x-8 flex">
-            <a href="http://localhost:5173/home" className="text-gray-400 hover:text-black">Home</a>
+            <a href="http://localhost:5173" className="text-gray-400 hover:text-black">Home</a>
             <a href="http://localhost:5173/about" className="text-gray-400 hover:text-black">About</a>
             <a href="http://localhost:5173/menu" className="text-gray-400 hover:text-black">Menu</a>
             <a href="#" className="text-gray-400 hover:text-black">Pages</a>

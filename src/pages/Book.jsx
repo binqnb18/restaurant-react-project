@@ -3,7 +3,7 @@ import Layout from '../Layouts/Layout';
 
 const Book = () => {
   return (
-    <Layout>
+    
       <div className="flex flex-col items-center min-h-screen" style={{ marginTop: '-150px' }}>
         <div 
           className="text-center mb-6"
@@ -105,7 +105,6 @@ const Book = () => {
           </form>
         </div>
       </div>
-    </Layout>
   );
 }
 

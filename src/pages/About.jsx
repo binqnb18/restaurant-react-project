@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Layout from '../Layouts/Layout'
 import rib from '../assets/img/rib.png'
@@ -6,7 +7,7 @@ import Guest from '../Components/Guest'
 import Feedback from '../Components/Feedback'
 const About = () => {
   return (
-    <Layout>
+<about>
 <div class="relative flex flex-col md:flex-row items-center md:items-start gap-[90px] w-[1296px] h-[616px] mx-auto mt-[214px] ml-[152px]">
   
   <div class="flex-shrink-0 relative">
@@ -41,7 +42,7 @@ const About = () => {
 <Video />
 <Guest />
 <Feedback />
-    </Layout>
+</about>
   )
 }
 

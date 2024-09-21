@@ -4,9 +4,9 @@ import Catagory from '../Components/Catagory'
 
 const Menu = () => {
   return (
-    <Layout>
+  
         <Catagory />
-    </Layout>
+  
   )
 }
 
